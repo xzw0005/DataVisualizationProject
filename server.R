@@ -8,10 +8,11 @@ for (p in pkgs) {
     library(p, character.only = TRUE)
 }
 nasdaq = read.csv("nasdaq.csv")
-nasdaq$Stock.return = as.numeric(sub("%", "", nasdaq$Stock.return))
+nasdaq$Stock.return = as.numeric(sub("%", "", nasdaq$Stock.return)) 
 
 sp = read.csv("sp500.csv")
-sp$Stock.return = as.numeric(sub("%", "", sp$Stock.return))
+sp$Stock.return = as.numeric(sub("%", "", sp$Stock.return)) 
+
 options(warn=-1)
 
 #source("getFullData.R")

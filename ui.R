@@ -72,8 +72,8 @@ shinyUI(navbarPage("Stock Market Trend Prediction and Analysis Tool",
             ),                           
             
         navbarMenu("More",
-            tabPanel("more1",
-                includeMarkdown("haha.md")
+            tabPanel("Process Book",
+                includeMarkdown("processBook.md")
             ),
             tabPanel("more2",
                 includeMarkdown("haha2.md")
